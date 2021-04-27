@@ -1,0 +1,305 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <style>
+         body{
+            width:1060px;
+            margin:0 auto;
+            background: #E6E6E6;
+        }
+
+        #page-wrapper{
+            background: white;
+            margin:40px 0;
+            padding: 10px 20px;
+            border-radius:5px;
+            box-shadow: 0 2px 6px rgba(100,100,100,0.3);
+        }
+    </style>
+    <style>
+        h2{
+            display: table;
+            margin-left: auto;
+            margin-right: auto;
+        }
+        .oxtable{
+            display: table;
+            margin-left: auto;
+            margin-right: auto;
+        }
+        .q1 {
+            width: 800px;
+            height: 2000px;
+            margin-left: auto;
+            margin-right: auto;
+        }
+
+        .test_info{
+            display: table;
+            margin-left: auto;
+            margin-right: auto;
+        }
+        .
+
+
+
+        {
+            float:right;
+            margin: 10px;
+        }
+        .test_multiple{
+            width: 800px;
+            height: auto;
+            margin-left: auto;
+            margin-right: auto;
+            border: 1px solid black;
+        }
+        .sc_table{
+            width: 800px;
+            height: auto;
+            margin-left: auto;
+            margin-right: auto;
+
+        }
+        #btn_complete{
+            width:100px;
+            height:40px;
+            font-size:20px;
+            border:2px solid black;
+        }
+
+        .clock{
+            position: fixed;
+            float: left;
+            z-index : 99;
+            top: 10px;
+            left: 10px;
+        }
+
+        .container{
+            position: fixed;
+            float: left;
+            z-index : 99;
+            top: 10px;
+            left: 10px;
+        }
+
+    </style>
+</head>
+<body>
+    <div id="page-wrapper">
+        <h2>Online Test</h2> -
+        <form action="complete" method="POST">
+        <div>
+            <table class ='test_info' border="1">
+                <tr>
+                    <td>과정명</td>
+                    <td>빅데이터 분석을 위한 AI응용소프트웨어 과정</td>
+                    <td style="text-align:center" rowspan="4" width="70" style="table-layout: fixed">점수</td>
+                    <td style="text-align:center" rowspan="4" width="70" style="table-layout: fixed">100%</td>
+                </tr>
+                <tr>
+                    <td>과목</td>
+                    <td>HTML + CSS part 1</td>
+                </tr>
+                <tr>
+                    <td>이름</td>
+                    <td><input type="text" name="name"></td>
+                </tr>
+                <tr>
+                    <td>시험일자</td>
+                    <td> <input type="date"></td>
+                </tr>
+            </table>
+        </div>
+            <br><br>
+        <div class="q1">
+            <h1> </h1>
+            <table class='oxtable' border="1">
+                <tr>
+                    <th colspan="4" style="text-align:center"><h2>True or False Questions</h2>
+                        <p>(총 10문제, 한 문제당 1점)</p>
+                    </th>
+                </tr>
+                <tr>
+                    <td>&nbsp1.</td>
+                    <td>h1 태그가 가장 큰 제목 태그고,h 6 태그가 가장 작은 제목 태그입니다.</td>
+                    <td hight=50 width=70 style="table-layout: fixed" ><input type="radio" name="rd_1" value ='1' required>True</td>
+                    <td hight=50 width=70 style="table-layout: fixed" ><input type="radio" name="rd_1" value ='0'>False</td>
+                </tr>
+                <tr>
+                    <td>&nbsp2.</td>
+                    <td>목록은 ul 태그와 ol 태그 내부에 li 태그를 넣어서 만듭니다.</td>
+                    <td hight=50 width=70 style="table-layout: fixed" ><input type="radio" name="rd_2"  value ='1' required>True</td>
+                    <td hight=50 width=70 style="table-layout: fixed" ><input type="radio" name="rd_2" value ='0'>False</td>
+                </tr>
+                <tr>
+                    <td>&nbsp3.</td>
+                    <td>th 태그와 td 태그의 rowspan 속성과 colspan 속성을 사용하면
+                        마이크로소프트 워드 등 스프레드시트에 있는 셀 병합 기능처럼 테이블의 셀을 병합할 수 있습니다.</td>
+                    <td hight=50 width=70 style="table-layout: fixed" ><input type="radio" name="rd_3"  value ='1' required>True</td>
+                    <td hight=50 width=70 style="table-layout: fixed" ><input type="radio" name="rd_3"  value ='0'>False</td>
+                </tr>
+                <tr>
+                    <td>&nbsp4.</td>
+                    <td>“https://www.google.com/search?q=더조은”처럼 주소에
+                        “q=더조은” 데이터를 넣은 것은 POST 방식의 요청입니다.</td>
+                    <td hight=50 width=70 style="table-layout: fixed" ><input type="radio" name="rd_4" value ='1' required>True</td>
+                    <td hight=50 width=70 style="table-layout: fixed" ><input type="radio" name="rd_4" value ='0'>False</td>
+                </tr>
+                <tr>
+                    <td>&nbsp5.</td>
+                    <td>자손은 후손보다 넓은 개념입니다.</td>
+                    <td hight=50 width=70 style="table-layout: fixed" ><input type="radio" name="rd_5"  value ='1' required>True</td>
+                    <td hight=50 width=70 style="table-layout: fixed" ><input type="radio" name="rd_5"  value ='0'>False</td>
+                </tr>
+                <tr>
+                    <td>&nbsp6.</td>
+                    <td>div > h1, h2는 “div 태그 아래”의
+                        “h1 태그와 h2 태그”를 선택하는 선택자입니다.</td>
+                    <td hight=50 width=70 style="table-layout: fixed" ><input type="radio" name="rd_6"  value ='1' required>True</td>
+                    <td hight=50 width=70 style="table-layout: fixed" ><input type="radio" name="rd_6"  value ='0'>False</td>
+                </tr>
+                <tr>
+                    <td>&nbsp7.</td>
+                    <td>inline-block 형식의 태그는 width 속성과 height 속성이 지정되며,
+                        margin 속성과 padding 속성이 상하좌우로 적용됩니다.</td>
+                    <td hight=50 width=70 style="table-layout: fixed" ><input type="radio" name="rd_7"  value ='1' required>True</td>
+                    <td hight=50 width=70 style="table-layout: fixed" ><input type="radio" name="rd_7"  value ='0'>False</td>
+                </tr>
+                <tr>
+                    <td>&nbsp8.</td>
+                    <td>z-index 속성의 숫자가 클수록 앞에 위치합니다.</td>
+                    <td hight=50 width=70 style="table-layout: fixed" ><input type="radio" name="rd_8"  value ='1' required>True</td>
+                    <td hight=50 width=70 style="table-layout: fixed" ><input type="radio" name="rd_8"  value ='0'>False</td>
+                </tr>
+                <tr>
+                    <td>&nbsp9.</td>
+                    <td>overflow 속성을 hidden으로 지정하면 영역을 넘은 부분을 보이지 않게 만듭니다.
+                        이 때 스크롤을 사용해 보이지 않게 된 부분을 볼 수 있습니다.</td>
+                    <td hight=50 width=70 style="table-layout: fixed" ><input type="radio" name="rd_9"  value ='1' required>True</td>
+                    <td hight=50 width=70 style="table-layout: fixed" ><input type="radio" name="rd_9"  value ='0'>False</td>
+                </tr>
+                <tr>
+                    <td>&nbsp10.</td>
+                    <td>2em은 2배를 나타내는 크기 단위입니다.</td>
+                    <td hight=50 width=70 style="table-layout: fixed" ><input type="radio" name="rd_10"  value ='1' required>True</td>
+                    <td hight=50 width=70 style="table-layout: fixed" ><input type="radio" name="rd_10"  value ='0'>False</td>
+                </tr>
+            </table> <br><br>
+            <div>
+                <table class="test_multiple" border="1">
+                    <tr>
+                        <th style="text-align:center">
+                            <h2>Multiple Choice Questions</h2>
+                            <p>(총 5문제, 한 문제당 5점)</p>
+                        </th>
+
+                    </tr>
+
+                    <tr>
+                        <td style="font-weight:1000">1. head 태그 내부에 입력할 수 없는 태그를 보기에서 선택하세요. </td>
+                    </tr>
+                    <tr>
+                        <td><input type="radio" name="rdm_1" value ='0'required>a. style 태그
+                            <br> <input type="radio" name="rdm_1" value ='0'>b. meta 태그
+                            <br><input type="radio" name="rdm_1" value ='0'>c. base 태그
+                            <br><input type="radio" name="rdm_1" value ='5'>d. header 태그
+                        </td>
+                    </tr>
+                    <tr>
+                        <td style="font-weight:1000">2. 이미지 대체 문자를 지정할 때 사용하는 속성을 보기에서 선택하세요. </td>
+                    </tr>
+                    <tr>
+                        <td><input type="radio" name="rdm_2" value ='0' required>a. text
+                            <br> <input type="radio" name="rdm_2" value ='0'>b. alter
+                            <br><input type="radio" name="rdm_2" value ='5'>c. alt
+                            <br><input type="radio" name="rdm_2" value ='0'>d. imgtxt
+                        </td>
+                    </tr>
+                    <tr>
+                        <td style="font-weight:1000">3. 다음 중 a 태그로 빈 링크를 만들 때, href 속성에 일반적으로 사용되는 기호를 보기에서 선택하세요. </td>
+                    </tr>
+                    <tr>
+                        <td><input type="radio" name="rdm_3" value ='5' required>a. #
+                            <br> <input type="radio" name="rdm_3" value ='0'>b. @
+                            <br><input type="radio" name="rdm_3" value ='0'>c. *
+                            <br><input type="radio" name="rdm_3" value ='0'>d. +
+                        </td>
+                    </tr>
+                    <tr>
+                        <td style="font-weight:1000">4. select 태그 내부에서 각 항목을 만드는 데 사용하는 태그를 보기에서 선택하세요.  </td>
+                    </tr>
+                    <tr>
+                        <td><input type="radio" name="rdm_4" value ='0' required>a. li 태그
+                            <br> <input type="radio" name="rdm_4" value ='5'>b. option 태그
+                            <br><input type="radio" name="rdm_4" value ='0'>c. item 태그
+                            <br><input type="radio" name="rdm_4" value ='0'>d. opt 태그
+                        </td>
+                    </tr>
+                    <tr>
+                        <td style="font-weight:1000">5. HTML5 표준에 추가된 시맨틱 태그가 아닌 보기를 선택하세요. </td>
+                    </tr>
+                    <tr>
+                        <td><input type="radio" name="rdm_5" value ='5' required>a. head 태그
+                            <br> <input type="radio" name="rdm_5" value ='0'>b. nav 태그
+                            <br><input type="radio" name="rdm_5" value ='0'>c. aside 태그
+                            <br><input type="radio" name="rdm_5" value ='0'>d. footer 태그
+                        </td>
+                    </tr>
+                </table>
+            </div>
+                    <br><br>
+            <div>
+                <table class='sc_table' border ='1'>
+                    <tr>
+                         <th colspan="4" style="text-align:center"><h2>Sentence Completion Problem</h2>
+                         <p>(총 2문제, 한 문제당 10점)</p>
+                    </tr>
+                    <tr>
+                        <td style="font-weight:1000">1. 아래 내용은 CSS의 박스 모델에 대한 설명입니다. 괄호 (①, ②)에 해당하는 단어를 한글로 서술하세요.</td>
+                    </tr>
+                    <tr>
+                        <td>( ① ) 레벨 요소는 줄을 차지하지 않는 요소입니다.<br>
+                            화면에 표시되는 콘텐츠만큼만 영역을 차지하고 나머지 공간은 다른 요소가 올 수 있습니다.<br>
+                            반면에 ( ② ) 레벨 요소는 혼자 한 줄을 차지하는 요소입니다.<br>
+                            해당 요소의 너비가 100%라는 의미이며, 그 요소의 왼쪽이나 오른쪽에 다른 요소가 올 수 없습니다,<br>
+                            너비나 마진, 패딩 등을 이용하려면 ( ② )레벨 요소여야 합니다.
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            ① (<input type="textarea" name='q1_t1' value="" required>) ②(<input type="textarea" name='q1_t2' value="" required> )
+                        </td>
+                    </tr>
+                    <tr>
+                        <td style="font-weight:1000">2. 문항을 읽고, 괄호 안에 정답을 한글 혹은 영문 소문자로 서술하세요.
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <br>
+                            A. (<input type="textarea" name='q2_t1' value="" required>) 방식은 GET 방식과 달리 비밀스럽게 데이터를 전달합니다. <br><br>
+                            B. (<input type="textarea" name='q2_t2' value="" required>) 속성은 글자 정렬을 지정합니다. <br><br>
+                            C. HTML 본문에 공백을 여러 번 넣고 싶을 때는 (<input type="textarea" name='q2_t3' value="" required>)를 사용합니다. <br><br>
+                            D. (<input type="textarea" name='q2_t4' value="" required>) 에 none 키워드를 적용하면 태그가 화면에서 보이지 않습니다. <br><br>
+                        </td>
+                </table>
+            </div>
+
+
+
+            <div class ='btn_complete'>
+                <tr>
+                    <td><input type="submit" id='btn_co
+                    mplete' name="btn_complete" value ='완료'></td>
+                </tr>
+            </div>
+        </div>
+    </form>
+    </div>
+
+</body>
+</html>

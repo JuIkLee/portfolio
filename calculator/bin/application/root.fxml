@@ -1,0 +1,128 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="application.RootController">
+   <children>
+      <VBox prefHeight="500.0" prefWidth="400.0">
+         <children>
+            <Label fx:id="lbl_result" alignment="CENTER_RIGHT" prefHeight="100.0" prefWidth="400.0" text="0" textAlignment="RIGHT">
+               <font>
+                  <Font size="26.0" />
+               </font>
+               <VBox.margin>
+                  <Insets />
+               </VBox.margin>
+               <padding>
+                  <Insets right="10.0" />
+               </padding>
+            </Label>
+            <HBox prefHeight="100.0" prefWidth="400.0">
+               <children>
+                  <Button fx:id="btn_7" mnemonicParsing="false" onAction="#handleBtnNumbers" prefHeight="100.0" prefWidth="100.0" text="7">
+                     <font>
+                        <Font size="40.0" />
+                     </font>
+                  </Button>
+                  <Button fx:id="btn_8" mnemonicParsing="false" onAction="#handleBtnNumbers" prefHeight="100.0" prefWidth="100.0" text="8">
+                     <font>
+                        <Font size="40.0" />
+                     </font>
+                  </Button>
+                  <Button fx:id="btn_9" mnemonicParsing="false" onAction="#handleBtnNumbers" prefHeight="100.0" prefWidth="100.0" text="9">
+                     <font>
+                        <Font size="40.0" />
+                     </font>
+                  </Button>
+                  <Button fx:id="btn_add" mnemonicParsing="false" onAction="#handleBtnOperator" prefHeight="100.0" prefWidth="100.0" text="+">
+                     <font>
+                        <Font size="40.0" />
+                     </font>
+                  </Button>
+               </children>
+            </HBox>
+            <HBox prefHeight="100.0" prefWidth="400.0">
+               <children>
+                  <Button fx:id="btn_4" mnemonicParsing="false" onAction="#handleBtnNumbers" prefHeight="100.0" prefWidth="100.0" text="4">
+                     <font>
+                        <Font size="40.0" />
+                     </font>
+                  </Button>
+                  <Button fx:id="btn_5" mnemonicParsing="false" onAction="#handleBtnNumbers" prefHeight="100.0" prefWidth="100.0" text="5">
+                     <font>
+                        <Font size="40.0" />
+                     </font>
+                  </Button>
+                  <Button fx:id="btn_6" mnemonicParsing="false" onAction="#handleBtnNumbers" prefHeight="100.0" prefWidth="100.0" text="6">
+                     <font>
+                        <Font size="40.0" />
+                     </font>
+                  </Button>
+                  <Button fx:id="btn_sub" mnemonicParsing="false" onAction="#handleBtnOperator" prefHeight="100.0" prefWidth="100.0" text="-">
+                     <font>
+                        <Font size="40.0" />
+                     </font>
+                  </Button>
+               </children>
+            </HBox>
+            <HBox prefHeight="100.0" prefWidth="400.0">
+               <children>
+                  <Button fx:id="btn_1" mnemonicParsing="false" onAction="#handleBtnNumbers" prefHeight="100.0" prefWidth="100.0" text="1">
+                     <font>
+                        <Font size="40.0" />
+                     </font>
+                  </Button>
+                  <Button fx:id="btn_2" mnemonicParsing="false" onAction="#handleBtnNumbers" prefHeight="100.0" prefWidth="100.0" text="2">
+                     <font>
+                        <Font size="40.0" />
+                     </font>
+                  </Button>
+                  <Button fx:id="btn_3" mnemonicParsing="false" onAction="#handleBtnNumbers" prefHeight="100.0" prefWidth="100.0" text="3">
+                     <font>
+                        <Font size="40.0" />
+                     </font>
+                  </Button>
+                  <Button fx:id="btn_mul" mnemonicParsing="false" onAction="#handleBtnOperator" prefHeight="100.0" prefWidth="100.0" text="*">
+                     <font>
+                        <Font size="40.0" />
+                     </font>
+                  </Button>
+               </children>
+            </HBox>
+            <HBox prefHeight="100.0" prefWidth="400.0">
+               <children>
+                  <Button fx:id="btn_C" mnemonicParsing="false" onAction="#handleBtnClear" prefHeight="100.0" prefWidth="100.0" text="C">
+                     <font>
+                        <Font size="40.0" />
+                     </font>
+                  </Button>
+                  <Button fx:id="btn_0" mnemonicParsing="false" onAction="#handleBtnNumbers" prefHeight="100.0" prefWidth="100.0" text="0">
+                     <font>
+                        <Font size="40.0" />
+                     </font>
+                  </Button>
+                  <Button fx:id="btn_equal" mnemonicParsing="false" onAction="#handleBtnOperator" prefHeight="100.0" prefWidth="100.0" text="=">
+                     <font>
+                        <Font size="40.0" />
+                     </font>
+                  </Button>
+                  <Button fx:id="btn_div" mnemonicParsing="false" onAction="#handleBtnOperator" prefHeight="100.0" prefWidth="100.0" text="/">
+                     <font>
+                        <Font size="40.0" />
+                     </font>
+                  </Button>
+               </children>
+            </HBox>
+         </children>
+      </VBox>
+   </children>
+   <opaqueInsets>
+      <Insets bottom="-1.0" left="-1.0" right="-1.0" top="-1.0" />
+   </opaqueInsets>
+</AnchorPane>

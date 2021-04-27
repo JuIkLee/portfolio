@@ -1,0 +1,134 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+
+<VBox onMouseClicked="#OnMouseClickedRoot" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="application.NextController">
+   <children>
+      <HBox prefHeight="100.0" prefWidth="200.0">
+         <children>
+            <Label fx:id="lbl_title" alignment="CENTER" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" text="Pair Game" HBox.hgrow="ALWAYS">
+               <font>
+                  <Font size="41.0" />
+               </font>
+            </Label>
+         </children>
+         <padding>
+            <Insets bottom="15.0" left="30.0" right="30.0" top="30.0" />
+         </padding>
+      </HBox>
+      <HBox prefHeight="100.0" prefWidth="200.0" spacing="30.0">
+         <children>
+            <ImageView fx:id="next_card0" fitHeight="180.0" fitWidth="100.0" onMouseClicked="#OnMouseClickedImageView" pickOnBounds="true">
+               <image>
+                  <Image url="@images/backside.jpg" />
+               </image>
+            </ImageView>
+            <ImageView fx:id="next_card1" fitHeight="180.0" fitWidth="100.0" onMouseClicked="#OnMouseClickedImageView" pickOnBounds="true">
+               <image>
+                  <Image url="@images/backside.jpg" />
+               </image>
+            </ImageView>
+            <ImageView fx:id="next_card2" fitHeight="180.0" fitWidth="100.0" onMouseClicked="#OnMouseClickedImageView" pickOnBounds="true">
+               <image>
+                  <Image url="@images/backside.jpg" />
+               </image>
+            </ImageView>
+            <ImageView fx:id="next_card3" fitHeight="180.0" fitWidth="100.0" onMouseClicked="#OnMouseClickedImageView" pickOnBounds="true">
+               <image>
+                  <Image url="@images/backside.jpg" />
+               </image>
+            </ImageView>
+         </children>
+         <padding>
+            <Insets bottom="15.0" left="30.0" right="30.0" top="15.0" />
+         </padding>
+      </HBox>
+      <HBox prefHeight="100.0" prefWidth="200.0" spacing="30.0">
+         <children>
+            <ImageView fx:id="next_card4" fitHeight="180.0" fitWidth="100.0" onMouseClicked="#OnMouseClickedImageView" pickOnBounds="true">
+               <image>
+                  <Image url="@images/backside.jpg" />
+               </image>
+            </ImageView>
+            <ImageView fx:id="next_card5" fitHeight="180.0" fitWidth="100.0" onMouseClicked="#OnMouseClickedImageView" pickOnBounds="true">
+               <image>
+                  <Image url="@images/backside.jpg" />
+               </image>
+            </ImageView>
+            <ImageView fx:id="next_card6" fitHeight="180.0" fitWidth="100.0" onMouseClicked="#OnMouseClickedImageView" pickOnBounds="true">
+               <image>
+                  <Image url="@images/backside.jpg" />
+               </image>
+            </ImageView>
+            <ImageView fx:id="next_card7" fitHeight="180.0" fitWidth="100.0" onMouseClicked="#OnMouseClickedImageView" pickOnBounds="true">
+               <image>
+                  <Image url="@images/backside.jpg" />
+               </image>
+            </ImageView>
+         </children>
+         <padding>
+            <Insets bottom="15.0" left="30.0" right="30.0" top="15.0" />
+         </padding>
+      </HBox>
+      <HBox prefHeight="100.0" prefWidth="200.0" spacing="30.0">
+         <children>
+            <ImageView fx:id="next_card8" fitHeight="180.0" fitWidth="100.0" onMouseClicked="#OnMouseClickedImageView" pickOnBounds="true">
+               <image>
+                  <Image url="@images/backside.jpg" />
+               </image>
+            </ImageView>
+            <ImageView fx:id="next_card9" fitHeight="180.0" fitWidth="100.0" onMouseClicked="#OnMouseClickedImageView" pickOnBounds="true">
+               <image>
+                  <Image url="@images/backside.jpg" />
+               </image>
+            </ImageView>
+            <ImageView fx:id="next_card10" fitHeight="180.0" fitWidth="100.0" onMouseClicked="#OnMouseClickedImageView" pickOnBounds="true">
+               <image>
+                  <Image url="@images/backside.jpg" />
+               </image>
+            </ImageView>
+            <ImageView fx:id="next_card11" fitHeight="180.0" fitWidth="100.0" onMouseClicked="#OnMouseClickedImageView" pickOnBounds="true">
+               <image>
+                  <Image url="@images/backside.jpg" />
+               </image>
+            </ImageView>
+         </children>
+         <padding>
+            <Insets bottom="15.0" left="30.0" right="30.0" top="15.0" />
+         </padding>
+      </HBox>
+      <HBox prefHeight="100.0" prefWidth="200.0" spacing="30.0">
+         <children>
+            <ImageView fx:id="next_card12" fitHeight="180.0" fitWidth="100.0" onMouseClicked="#OnMouseClickedImageView" pickOnBounds="true">
+               <image>
+                  <Image url="@images/backside.jpg" />
+               </image>
+            </ImageView>
+            <ImageView fx:id="next_card13" fitHeight="180.0" fitWidth="100.0" onMouseClicked="#OnMouseClickedImageView" pickOnBounds="true">
+               <image>
+                  <Image url="@images/backside.jpg" />
+               </image>
+            </ImageView>
+            <ImageView fx:id="next_card14" fitHeight="180.0" fitWidth="100.0" onMouseClicked="#OnMouseClickedImageView" pickOnBounds="true">
+               <image>
+                  <Image url="@images/backside.jpg" />
+               </image>
+            </ImageView>
+            <ImageView fx:id="next_card15" fitHeight="180.0" fitWidth="100.0" onMouseClicked="#OnMouseClickedImageView" pickOnBounds="true">
+               <image>
+                  <Image url="@images/backside.jpg" />
+               </image>
+            </ImageView>
+         </children>
+         <padding>
+            <Insets bottom="30.0" left="30.0" right="30.0" top="15.0" />
+         </padding>
+      </HBox>
+   </children>
+</VBox>

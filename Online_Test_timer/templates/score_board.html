@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <style>
+        .div {
+            display: table;
+            padding: 50px;
+            margin-left: auto;
+            margin-right: auto;
+            border: 5px solid black;
+            width: 600px;
+            height: 400px;
+
+        }
+        .score{
+            display:table;
+            margin-left: auto;
+            margin-right: auto;
+            padding: 40px;
+            border:2px solid black;
+        }
+        .title{
+            text-align:center;
+            font-size:40px;
+            font-weight:bold;
+            font-style:italic;
+            border-top: 1px solid black;
+            border-bottom: 1px solid black;
+            background-color: gold;
+        }
+        .title2{
+            text-align:center;
+            font-size:30px;
+            font-weight:bold;
+            color: blue;
+        }
+         .title3{
+            text-align:center;
+            font-size:12px;
+            font-style:italic;
+        }
+        .gradingscale{
+            display:table;
+            margin-left: auto;
+            margin-right: auto;
+            text-align:center;
+        }
+
+
+    </style>
+</head>
+<body>
+    <br><br><br>
+    <form action="score" method="POST">
+        <div class = 'div'>
+            <tr>
+                <td>
+                    <tr>
+                         <p class='title'>CERTIFICATE of ACHIEVEMENT</p>
+                    </tr>
+                    <tr>
+                         <p class="title2">'{{nameHtml}}'님의 점수는 [ {{dataHtml}}% ({{gradeHtml}})]</p>
+                    </tr>
+                    <table class='gradingscale' border="1">
+                        <tr>
+                            <th colspan="2">Grading Scale</th>
+                        </tr>
+                        <tr>
+                            <td>Score</td>
+                            <td>Grades</td>
+                        </tr>
+                        <tr>
+                            <td>score > 90</td>
+                            <td>A</td>
+                        </tr>
+                        <tr>
+                            <td>score > 80</td>
+                            <td>B</td>
+                        </tr>
+                        <tr>
+                            <td>score > 70</td>
+                            <td>C</td>
+                        </tr>
+                        <tr>
+                            <td>score < 69</td>
+                            <td>FAIL</td>
+                        </tr>
+
+                    </table>
+                    <p class="title3">What is Lorem Ipsum?What is Lorem Ipsum?What is Lorem Ipsum?
+                    What is Lorem Ipsum?What is Lorem Ipsum?What is Lorem Ipsum?What is Lorem Ipsum?
+                    What is Lorem Ipsum?What is Lorem Ipsum?What is Lorem Ipsum?What is Lorem Ipsum?What is Lorem Ipsu
+                    What is Lorem Ipsum?What is Lorem Ipsum?What is Lorem Ipsum?What is Lorem Ipsum?What is Lorem Ipsum?
+                    What is Lorem Ipsum?What is Lorem Ipsum?What is Lorem Ipsum?What is Lorem Ipsum?What is Lorem Ipsum? What is Lorem Ipsum?What is Lorem Ipsum?What is Lorem Ipsum?What is Lorem Ipsum?What is Lorem Ipsum?
+                    What is Lorem Ipsum?What is Lorem Ipsum?What is Lorem Ipsum?What is Lorem Ipsum?What is Lorem Ipsum?
+                    What is Lorem Ipsum?What is Lorem Ipsum?What is Lorem Ipsum?What is Lorem Ipsum?What is Lorem Ipsum?</p>
+                </td>
+            </tr>
+        </div>
+    </form>
+
+</body>
+</html>
